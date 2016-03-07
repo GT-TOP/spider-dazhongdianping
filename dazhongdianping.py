@@ -34,7 +34,7 @@ ua = [{'User-Agent':'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) Ap
       {'User-Agent':'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; TencentTraveler 4.0)'}]
 
 #实现翻页功能
-for i in range(54,total_page+1):
+for i in range(1,total_page+1):
     new_link = re.sub('pageno=\d+','pageno=%d'%i,old_url,re.S)
     time.sleep(random.randint(1,10))
     print i
